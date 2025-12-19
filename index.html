@@ -14,19 +14,28 @@
     }
 
     header {
-        background-color: #c8f7c5; /* soft green header */
-        padding: 20px;
-        text-align: center;
+        background-color: #c8f7c5; /* soft green */
+        padding: 15px 30px;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
-    header img {
-        height: 60px;
+    .header-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 20px;
+    }
+
+    .logo {
+        height: 110px;  /* BIGGER LOGO */
+        width: auto;
     }
 
     h1 {
-        margin-top: 10px;
+        margin: 0;
+        font-size: 34px;
         color: #005500;
+        font-weight: 700;
     }
 
     .container {
@@ -66,15 +75,18 @@
 <body>
 
 <header>
-    <!-- Replace with your logo -->
-    <img src="AMveritx.png" alt="Logo">
-    <h1>Your Website Name</h1>
+    <div class="header-container">
+        <!-- Replace logo.png with your real logo file name -->
+        <img src="AMvertix.png" class="logo" alt="Logo">
+        <h1>Your Website Name</h1>
+    </div>
 </header>
 
 <div class="container">
     <h2>Welcome to Our Website</h2>
     <p>
-        This is your new light-green themed website. You can customize the text, add your logo, and adjust anything you want.
+        This is your new light-green themed website. 
+        Add your logo, change text, or customize anything you want.
     </p>
 
     <button>Learn More</button>
